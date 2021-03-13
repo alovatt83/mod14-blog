@@ -14,7 +14,7 @@ Post.belongsTo(User, {
   onDelete: 'SET NULL'
 });
 
-User.belongsToMany(Post, {
+User.belongsToMany(ost, {
   through: Vote,
   as: 'voted_posts',
 
